@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bored</string>
+    <string name="no_internet_error">Please check your internet connection!</string>
+    <string name="yes_i_am_bored">Yes, I am Bored :/</string>
+    <string name="are_you_bored">Are You Bored?</string>
+    <string name="go_to_the_link">Go to the link</string>
+</resources>
