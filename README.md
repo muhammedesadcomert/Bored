@@ -10,7 +10,6 @@ Bored is a simple Android app written with Jetpack Compose that helps you find t
 - [Jetpack Compose](https://developer.android.com/jetpack/compose) - Android’s recommended modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.
 - [MVVM Architecture](https://developer.android.com/topic/architecture#recommended-app-arch) - Modern, maintainable, and Google-suggested app architecture.
 - Android Architecture Components - Collection of libraries that help you design robust, testable, and maintainable apps.
-    - [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - Perform an action when lifecycle state changes.
     - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Stores UI-related data that isn't destroyed on UI changes.
     - [Repository](https://developer.android.com/topic/architecture/data-layer) - Located in the data layer that contains application data and business logic.
     - [UseCase](https://developer.android.com/topic/architecture/domain-layer#use-cases-kotlin) - Located domain layer that sits between the UI layer and the data layer.
