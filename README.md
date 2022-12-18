@@ -19,7 +19,7 @@ Bored is a simple Android app written with Jetpack Compose that helps you find t
 
 ## Package Structure
 
-`
+```
 bored             # Root package
 |
 ├─ data           # Data layer
@@ -41,11 +41,11 @@ bored             # Root package
 │  ├─ theme       # Colors, typography and theme options
 |
 ├─ util           # Utility classes
-`
+```
 
 ## License
 
-`
+```
 MIT License
 
 Copyright (c) 2022 Muhammed Esad Cömert
@@ -67,4 +67,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-`
+```
