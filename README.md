@@ -27,8 +27,8 @@ Bored is a simple Android app written with Jetpack Compose that helps you find t
 bored             # Root package
 |
 ├─ data           # Data layer
-│  ├─ api         # BoredApi
 │  ├─ dto         # Data transfer objects for remote response
+│  ├─ network     # BoredApi
 │  ├─ repository  # Bored Repository
 |
 ├─ di             # Dependency-injection module
@@ -44,7 +44,7 @@ bored             # Root package
 │  ├─ home        # Main screen
 │  ├─ theme       # Colors, typography and theme options
 |
-├─ util           # Utility classes
+├─ util           # Utility classes/interfaces
 ```
 
 ## License
