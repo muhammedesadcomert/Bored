@@ -1,8 +1,8 @@
 package com.muhammedesadcomert.bored.di
 
 import com.muhammedesadcomert.bored.BuildConfig
-import com.muhammedesadcomert.bored.data.api.BoredApi
-import com.muhammedesadcomert.bored.data.api.InternetConnectionInterceptor
+import com.muhammedesadcomert.bored.data.network.BoredApi
+import com.muhammedesadcomert.bored.data.network.InternetConnectionInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.muhammedesadcomert.bored.data.api
+package com.muhammedesadcomert.bored.data.network
 
 import com.muhammedesadcomert.bored.data.dto.ActivityResponse
 import retrofit2.Response

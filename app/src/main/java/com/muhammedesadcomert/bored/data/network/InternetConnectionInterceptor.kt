@@ -1,4 +1,4 @@
-package com.muhammedesadcomert.bored.data.api
+package com.muhammedesadcomert.bored.data.network
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext

@@ -1,4 +1,4 @@
-package com.muhammedesadcomert.bored.data.api
+package com.muhammedesadcomert.bored.data.network
 
 import android.content.Context
 import com.muhammedesadcomert.bored.R

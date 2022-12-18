@@ -1,7 +1,7 @@
 package com.muhammedesadcomert.bored.data.repository
 
-import com.muhammedesadcomert.bored.data.api.BoredApi
 import com.muhammedesadcomert.bored.data.dto.ActivityResponse
+import com.muhammedesadcomert.bored.data.network.BoredApi
 import com.muhammedesadcomert.bored.di.coroutine.IoDispatcher
 import com.muhammedesadcomert.bored.util.NetworkResponseState
 import com.muhammedesadcomert.bored.util.SafeApiCall.safeApiCall

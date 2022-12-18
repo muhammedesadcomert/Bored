@@ -1,6 +1,6 @@
 package com.muhammedesadcomert.bored.util
 
-import com.muhammedesadcomert.bored.data.api.NoInternetException
+import com.muhammedesadcomert.bored.data.network.NoInternetException
 import retrofit2.HttpException
 import retrofit2.Response
 import java.io.IOException
