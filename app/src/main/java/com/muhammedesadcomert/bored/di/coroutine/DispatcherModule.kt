@@ -1,6 +1,5 @@
-package com.muhammedesadcomert.bored.di
+package com.muhammedesadcomert.bored.di.coroutine
 
-import com.muhammedesadcomert.bored.di.coroutine.IoDispatcher
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
