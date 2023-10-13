@@ -11,7 +11,6 @@ import dagger.hilt.android.scopes.ViewModelScoped
 @Module
 @InstallIn(ViewModelComponent::class)
 abstract class RepositoryModule {
-
     @Binds
     @ViewModelScoped
     abstract fun bindBoredRepository(boredRepositoryImpl: BoredRepositoryImpl): BoredRepository

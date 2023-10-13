@@ -11,7 +11,6 @@ import kotlinx.coroutines.Dispatchers
 @Module
 @InstallIn(ViewModelComponent::class)
 object CoroutineDispatchersModule {
-
     @IoDispatcher
     @Provides
     @ViewModelScoped

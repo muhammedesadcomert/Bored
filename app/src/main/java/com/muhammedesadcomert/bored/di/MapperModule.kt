@@ -13,9 +13,7 @@ import dagger.hilt.android.scopes.ViewModelScoped
 @Module
 @InstallIn(ViewModelComponent::class)
 abstract class MapperModule {
-
     @Binds
     @ViewModelScoped
-    abstract fun bindBoredActivityMapper(boredActivityMapper: BoredActivityMapper):
-            DomainMapper<ActivityResponse, ActivityEntity>
+    abstract fun bindBoredActivityMapper(boredActivityMapper: BoredActivityMapper): DomainMapper<ActivityResponse, ActivityEntity>
 }

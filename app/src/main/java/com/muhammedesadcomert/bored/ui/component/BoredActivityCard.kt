@@ -51,11 +51,13 @@ fun BoredActivityCard(activity: String, type: String, link: String) {
                 color = Color.Black
             )
             if (link.isNotEmpty())
-                Row(modifier = Modifier
-                    .padding(top = 16.dp)
-                    .clickable {
-                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
-                    }) {
+                Row(
+                    modifier = Modifier
+                        .padding(top = 16.dp)
+                        .clickable {
+                            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(link)))
+                        }
+                ) {
                     Text(
                         modifier = Modifier,
                         text = stringResource(R.string.go_to_the_link),

@@ -14,8 +14,9 @@ class BoredRepositoryImpl @Inject constructor(
     private val boredApi: BoredApi,
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : BoredRepository {
-    override suspend fun getActivity(): NetworkResponseState<ActivityResponse> =
-        withContext(ioDispatcher) {
+    override suspend fun getActivity(): NetworkResponseState<ActivityResponse> {
+        return withContext(ioDispatcher) {
             safeApiCall { boredApi.getActivity() }
         }
+    }
 }

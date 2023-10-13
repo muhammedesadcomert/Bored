@@ -6,19 +6,18 @@ import com.muhammedesadcomert.bored.data.network.InternetConnectionInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.components.ViewModelComponent
-import dagger.hilt.android.scopes.ViewModelScoped
+import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Singleton
 
 @Module
-@InstallIn(ViewModelComponent::class)
+@InstallIn(SingletonComponent::class)
 object NetworkModule {
-
     @Provides
-    @ViewModelScoped
+    @Singleton
     fun provideOkHttpClient(internetConnectionInterceptor: InternetConnectionInterceptor) =
         OkHttpClient.Builder()
             .addInterceptor(internetConnectionInterceptor)
@@ -29,7 +28,7 @@ object NetworkModule {
             ).build()
 
     @Provides
-    @ViewModelScoped
+    @Singleton
     fun provideBoredApi(okHttpClient: OkHttpClient): BoredApi = Retrofit.Builder()
         .baseUrl(BuildConfig.BORED_BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
