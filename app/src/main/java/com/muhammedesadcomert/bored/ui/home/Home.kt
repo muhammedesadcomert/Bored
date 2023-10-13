@@ -1,9 +1,15 @@
 package com.muhammedesadcomert.bored.ui.home
 
 import android.widget.Toast
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -23,17 +29,25 @@ fun Home(viewModel: HomeViewModel = hiltViewModel()) {
     val boredActivity by viewModel.boredActivity.collectAsState(initial = HomeUiState.Initial)
 
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .background(color = MaterialTheme.colorScheme.background),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         when (val result = boredActivity) {
             HomeUiState.Initial -> {
-                Text(text = stringResource(R.string.are_you_bored))
+                Text(
+                    text = stringResource(R.string.are_you_bored),
+                    color = MaterialTheme.colorScheme.onBackground,
+                    fontWeight = FontWeight.Bold
+                )
             }
+
             HomeUiState.Loading -> {
                 CircularProgressIndicator()
             }
+
             is HomeUiState.Success -> {
                 BoredActivityCard(
                     activity = result.data.activity.orEmpty(),
@@ -41,6 +55,7 @@ fun Home(viewModel: HomeViewModel = hiltViewModel()) {
                     link = result.data.link.orEmpty(),
                 )
             }
+
             is HomeUiState.Error -> {
                 SweetError(
                     message = result.errorMessage,
